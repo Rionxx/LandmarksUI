@@ -12,9 +12,9 @@ struct Badge: View {
     
     var badgeSymbol: some View {
         ForEach(0 ..< Badge.rotationCount) { i in
-            RotatedBadgeSymbol(angle: Angle(degrees: 0))
-                .opacity(0.5)
+            RotatedBadgeSymbol(angle: .degrees(Double(i) / Double(Badge.rotationCount)) * 360.0)
         }
+        .opacity(0.5)
     }
     
     var body: some View {
@@ -28,6 +28,7 @@ struct Badge: View {
                 
             }
         }
+        .scaledToFit()
     }
 }
 

@@ -23,7 +23,7 @@ struct BadgeSymbol: View {
                     CGPoint(x: middle, y: spacing),
                     CGPoint(x: middle - topWidth, y: topHeight - spacing),
                     CGPoint(x: middle, y: topHeight / 2 + spacing),
-                    CGPoint(x: middle + width, y: topHeight - spacing),
+                    CGPoint(x: middle + topWidth, y: topHeight - spacing),
                     CGPoint(x: middle, y: spacing)
                 ])
                 
